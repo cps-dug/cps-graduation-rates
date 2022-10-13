@@ -40,7 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically provided by github actions
         with:
-          upload_url: https://uploads.github.com/repos/fgregg/cps-graduation-rates/releases/79709747/assets
+          upload_url: https://uploads.github.com/repos/fgregg/cps-graduation-rates/releases/79709747/assets{?name,label}
           release_id: 79709747
           asset_path: ./cps_graduation_rates.db.zip # path to archive to upload
           asset_name: cps_graduation_rates.db.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
